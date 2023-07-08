@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+    <div class="background ">
+        <div id="left-background"></div>
+        <div id="right-background"></div>
+        <div class="main-window">
+            <div class="user">
+                <div class="uid">
+                    <span>J</span>
+                </div>
+                <div class="uoptions">
+                    <i class="fa-solid fa-cubes"></i>
+                    <i class="fa-solid fa-chart-column"></i>
+                    <i class="fa-solid fa-file-lines"></i>
+                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-regular fa-comment"></i>
+                    <i class="fa-solid fa-gear"></i>
+
+                </div>
+                <div class="upic">
+                    <img src="img/download.jpeg" alt="">
+                </div>
+            </div>
+            <div class="money" >
+                <div class="search cmp">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search Transactions...">
+                        <label for="cars"></label>
+
+                        <select name="cars" id="cars">
+                            <option value="volvo">Filters</option>
+                            <option value="saab">Facebook</option>
+                            <option value="mercedes">Apple</option>
+                            <option value="audi">Instagram</option>
+                        </select>
+                    </div>
+
+
+                    <div class="notify">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+
+
+                </div>
+                <div class="balance cmp">
+                    <span>Send Money</span>
+
+                    <div class="send-money-parent">
+                        <div class="send-money">
+
+
+                            <div class="card-details">
+                                <div class="card-info">
+                                    <img src="img/vecteezy_visa-logo-png-visa-icon-transparent-png_20975572_30.png"
+                                        alt="">
+                                    <span>5666*****8877</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+
+                                <div class="active-bal">
+                                    <span>Active Balance</span>
+                                    <span>$18,350</span>
+                                </div>
+                            </div>
+                            <div class="amount">
+                                <span>Amount</span>
+                                <h5>$800.00</h5>
+                                <button type="button" class="btn btn-primary btn-sm">Send Money</button>
+                            </div>
+
+
+                        </div>
+
+                        <div class="mon-bal">
+                            <div class="icon">
+                                <span>Monthly Balance</span>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+
+                            <h5>$4,13,134</h5>
+                            <div class="back-bar">
+                                <div class="front-bar"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bal-change">
+
+                        <div class="bal-update">
+
+                            <div class="icon">
+                                <i class="fa-solid fa-chart-pie"></i>
+
+                                <div>
+                                    <h6>$4,13</h6>
+                                    <span>Monthly Balance</span>
+                                </div>
+
+
+                            </div>
+                            <div class="bal-foot">
+                                <span>Balance Up By</span>
+                                <div class="up">
+                                    <i class="fa-solid fa-up-long"></i>
+                                    <span> +12.5%</span>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+                        <div class="bal-update">
+
+                            <div class="icon">
+                                <i class="fa-solid fa-trash"></i>
+
+                                <div>
+                                    <h6>$3,134</h6>
+                                    <span>Monthly Loss</span>
+                                </div>
+
+
+                            </div>
+                            <div class="bal-foot">
+                                <span>Balance Down By</span>
+                                <div class="down">
+                                    <i class="fa-solid fa-arrow-down-long"></i>
+                                    <span> -5.5%</span>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                        <div class="bal-update">
+
+                            <div class="icon">
+                                <i class="fa-solid fa-chart-pie"></i>
+
+                                <div>
+                                    <h6>$134</h6>
+                                    <span>Monthly Balance</span>
+                                </div>
+
+
+                            </div>
+                            <div class="bal-foot">
+                                <span>Balance Save By</span>
+                                <div class="up">
+                                    <i class="fa-solid fa-up-long"></i>
+                                    <span> 12.5%</span>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- Analytic and Invest section -->
+
+
+                <div class="analysis-and-invest">
+                    <div class="analytic">
+                        <div class="head">
+                            <h6>Balance Analytic</h6>
+                        </div>
+                        <div class="chart">
+                            <canvas id="myChart" style="width:400px ;max-width:600px;     background-color: white;"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="investment">
+                        <div class="head">
+                            <h6>Investment</h6>
+                        </div>
+                        <div class="company">
+                            <div class="comp-logo">
+                                <i class="fa-brands fa-apple icon-font"></i>
+                            </div>
+                            <div class="comp-details">
+                                <div class="comp-name">
+                                    <p>AAPL</p>
+                                    <p class="light-text">Apple.inc</p>
+                                </div>
+                                <div class="comp-invest">
+                                    <p>$488.703</p>
+                                    <p>+$19.77</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="company">
+                            <div class="comp-logo">
+                                <i class="fa-brands fa-apple icon-font"></i>
+                            </div>
+                            <div class="comp-details">
+                                <div class="comp-name">
+                                    <p>AAPL</p>
+                                    <p class="light-text">Apple.inc</p>
+                                </div>
+                                <div class="comp-invest">
+                                    <p>$488.703</p>
+                                    <p>+$19.77</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard">
+               <div class="dash-info cmp">
+                <div class="dash-head">
+                    <h2>👋 Hello, Rayon</h2>
+                    <p>Welcome to Pocket Dashboard</p>
+                </div>
+
+                <div class="card-info">
+                    <div class="my-card">
+                        <p>My Card</p>
+                        <i class="fa-solid fa-circle-plus"></i>
+
+                    </div>
+                </div>
+               </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+        const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+        
+        new Chart("myChart", {
+          type: "line",
+          data: {
+            labels: xValues,
+            datasets: [{
+              fill: false,
+              lineTension: 0,
+              backgroundColor: "rgba(0,0,255,1.0)",
+              borderColor: "rgba(0,0,255,0.1)",
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            scales: {
+              yAxes: [{ticks: {min: 6, max:16}}],
+            }
+          }
+        });
+        </script>
+    
+</body>
+
+</html>

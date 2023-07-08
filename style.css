@@ -1,0 +1,381 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cmp{
+    margin: 20px ;
+    padding: 10px;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  
+    border: 2px solid black;
+
+    background-color: rgb(255, 255, 255);
+}
+
+#left-background{
+    background-color: rgb(132, 193, 247);
+    width: 20%;
+   height: 1000px;
+}
+
+#right-background{
+    background-color: rgb(189, 224, 255); 
+    width: 80%;
+    height: 1000px;
+  
+}
+
+
+.main-window{
+    display: flex;
+   border-radius: 40px;
+    position: absolute;
+    top: 100px;
+    z-index: 10;
+    background-color: rgb(247, 236, 236);
+    width: 80%;
+  
+    height: 800px;
+}
+
+
+
+.user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+    background-color: rgb(24, 41, 98);
+    padding: 20px;
+    border-radius: 35px;
+}
+
+.uid span{
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 20px ;
+    padding: 10px 16px;
+    border-radius: 50px;
+    background-color: rgb(132, 135, 138);
+}
+
+.uoptions{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.uoptions i{
+    margin-top: 20px;
+    font-size:larger;
+    color: white;
+    padding: 10px;
+    opacity: .8;
+}
+
+
+
+.upic img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    opacity: .8;
+}
+
+
+/* search transctions  */
+
+.search{
+   display: flex;
+   justify-content: space-between;
+   
+}
+.search input{
+    border: none;
+
+}
+
+.search-bar{
+    
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search select{
+    border: none;
+    background-color: rgb(239, 239, 239);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.notify{
+background-color: white;
+padding: 18px 31px;
+border-radius: 30px;
+
+}
+.notify i{
+    font-size: larger;
+}
+
+
+/* send Money parent */
+
+.send-money-parent{
+display: flex;
+justify-content: space-between;
+}
+
+/* send money */
+
+.send-money{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    /* height: 200px; */
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+}
+
+
+/* card details */
+
+.card-details{
+    height: 130px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+/* card info */
+
+/* .card-info span#visa{
+   font-size: 8px;
+   font-weight: bolder;
+   color: rgb(30, 100, 150);
+   background-color:rgb(116, 183, 231) ;
+   border-radius: 3px;
+   padding: 2px;
+} */
+
+.card-info{
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+.card-info img{
+    width: 20px;
+}
+
+
+/* amount */
+.amount{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    
+}
+
+
+/* Monthly Balance */
+
+.mon-bal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(24, 41, 98);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+ 
+ .mon-bal   .icon{
+display: flex;
+justify-content: space-between;
+}
+
+/* progress bar */
+
+.back-bar{
+    height: 10px;
+    width: 300px;
+    background-color: rgb(181, 181, 181);
+    border-radius: 20px;
+}
+
+.front-bar{
+    height: 10px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px; 
+}
+
+
+/* balance change */
+
+.bal-change{
+    display: flex;
+    justify-content: space-between;
+  
+
+    margin: 10px;
+}
+
+
+/* balance update */
+
+.bal-update{
+   
+    color: black;
+    background-color: white;
+    padding: 20px;
+margin: 10px;
+    border-radius: 30px;
+}
+
+.bal-update .icon{
+    display: flex;
+    /* padding: 10px; */
+}
+
+.fa-chart-pie{
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(70, 239, 135);
+    background-color:rgb(203, 255, 223) ;
+    border-radius: 50px;
+}
+
+.bal-update span{
+    font-size: smaller;
+    color: grey;
+}
+
+.bal-foot{
+    display: flex;
+
+    width: 220px;
+
+    justify-content: space-between;
+    align-items: center;
+  padding-top: 20px;
+}
+
+.up .fa-up-long {
+    padding: 10px;
+    color: rgb(11, 249, 11);
+    background-color: rgb(187, 255, 187) ;
+    border-radius: 20px;
+}
+
+.up span{
+    color:  rgb(11, 249, 11); ;
+}
+
+
+.down .fa-arrow-down-long {
+    color: red;
+    padding: 10px;
+    background-color: rgb(209, 164, 164);
+    border-radius: 20px;
+}
+
+.down span{
+    color:  rgb(239, 0, 0); ;
+}
+
+.fa-trash{
+    font-size: larger;
+    color: rgb(247, 128, 0);
+}
+
+
+
+/* Analysis and invest */
+
+.analysis-and-invest{
+    display: flex;
+  justify-content: space-between;
+}
+
+/* analytics */
+
+
+
+.company{
+    width: 400px;
+    height: 85px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.comp-details{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.icon-font{
+font-size: 30px;
+padding: 10px;
+border-radius: 50px;
+background-color: rgb(222, 222, 222);
+/* margin: 10px; */
+}
+
+.light-text{
+    font-size: smaller;
+    color: grey;
+}
+
+/* dashboard info */
+
+.dash-info{
+    height: 700px;
+    width: 100%;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.dash-head p{
+    opacity: .5;
+}
+
+
+/* card-info */
+
+.card-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-circle-plus{
+    color: white;
+    background-color: black;
+    border: 2px dotted grey;
+    border-radius: 50px;
+}
